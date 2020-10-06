@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2017-9-13 11:55:55 by Hibernate Tools 3.5.0.Final -->
+
+<hibernate-mapping>
+
+   <class name="Student.Student" table="saccount">
+		<id name="id" type="java.lang.Integer">
+	
+		     <column name="id" />
+
+            <generator class="native"/>
+         </id>
+          <property name="number" type="java.lang.String">
+         	<column name="number"></column>
+         </property>
+           <property name="name" type="java.lang.String">
+         	<column name="name"></column>
+         </property>
+           <property name="sex" type="java.lang.String">
+         	<column name="sex"></column>
+         </property>
+           <property name="pnumber" type="java.lang.String">
+         	<column name="pnumber"></column>
+         </property>
+         <property name="password" type="java.lang.String">
+         	<column name="password"></column>
+         </property>
+           <property name="classs" type="java.lang.String">
+         	<column name="classs"></column>
+         </property>
+           <property name="adress" type="java.lang.String">
+         	<column name="adress"></column>
+         </property>
+           <property name="college" type="java.lang.String">
+         	<column name="college"></column>
+         </property>
+         
+         <property name="IDnumber" type="java.lang.String">
+         	<column name="IDnumber"></column>
+         </property>
+        
+</class>
+    
+	
+</hibernate-mapping>
+
+

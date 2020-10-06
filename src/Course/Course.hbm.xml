@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2017-9-13 11:55:55 by Hibernate Tools 3.5.0.Final -->
+
+<hibernate-mapping>
+
+   <class name="Course.Course" table="course">
+		<id name="id" type="java.lang.Integer">
+	
+		     <column name="id" />
+
+            <generator class="native"/>
+         </id>
+         <property name="name" type="java.lang.String">
+         	<column name="name"></column>
+         </property>
+         <property name="grade" type="java.lang.String">
+         	<column name="grade"></column>
+         </property>
+          <property name="nature" type="java.lang.String">
+         	<column name="nature"></column>
+         </property>
+          <property name="time" type="java.lang.String">
+         	<column name="time"></column>
+         </property>
+          <property name="week" type="java.lang.String">
+         	<column name="week"></column>
+         </property>
+          <property name="tname" type="java.lang.String">
+         	<column name="tname"></column>
+         </property>
+</class>
+    
+	
+</hibernate-mapping>
+
+

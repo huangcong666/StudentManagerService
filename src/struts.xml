@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="Student" extends="struts-default" namespace="/">
+		
+		<action name="StudentLogin" class="Student.StudentLogin">
+		
+			<result name="success">/studentsMain.jsp</result>
+			<result name="false">/studentsLogin.jsp</result>
+		</action>
+		<action name="StudentForget" class="Student.StudentForget">
+			<result name="success">/studentsLogin.jsp</result>
+			<result name="false">/studentsLogin.jsp</result>
+		</action>
+		<action name="StudentEdit" class="Student.StudentEdit">
+			<result name="success">/student/studentload.jsp</result>
+		</action>
+		<action name="StudentLoad" class="Student.StudentLoad">
+			<result name="success">/student/studentload.jsp</result>
+		</action>
+		<action name="StudentGradeLoad" class="Student.StudentGradeLoad">
+			<result name="success">/student/grade.jsp</result>
+		</action>
+		<action name="GradeAdd" class="Grade.GradeAdd">
+			<result name= "success">/teacher/student.jsp</result>
+			<result name= "false">/teacher/student.jsp</result>
+		</action>
+		<action name="GradeLoad" class="Grade.GradeLoad">
+			<result name="success">/teacher/student.jsp</result>
+		</action>
+		<action name="GradeEdit" class="Grade.GradeEdit">
+			<result name="success">/teacher/student.jsp</result>
+		</action>
+		<action name="ManagerLogin" class="Manager.ManagerLogin" >
+		
+			<result name="success">/managerMain.jsp</result>
+			<result name="false">/managerLogin.jsp</result>
+		</action>
+		<action name="TeacherLogin" class="Teacher.TeacherLogin">
+		
+			<result name="success">/teacherMain.jsp</result>
+			<result name="false">/teacherLogin.jsp</result>
+		</action>
+		<action name="TeacherLoad" class="Teacher.TeacherLoad">
+			<result name="success">/teacher/teacherload.jsp</result>
+		</action>
+		<action name="TeacherLoginForget" class="Teacher.TeacherLoginForget">
+			<result name="success">/teacherLogin.jsp</result>
+			<result name="false">/teacherLogin.jsp</result>
+		</action>
+		<action name="TeacherCourseLoad" class="Teacher.TeacherCourseLoad">
+			<result name="success">/teacher/course.jsp</result>
+		</action>
+		<action name="TeacherEdit" class="Teacher.TeacherEdit">
+			<result name="success">/teacher/teacherload.jsp</result>
+		</action>
+		<action name="ManagerLoad" class="Manager.ManagerLoad">
+			<result name="success">/manager/manager.jsp</result>
+		</action>
+		<action name="ManagerAdd" class="Manager.ManagerAdd">
+			<result name="success">/manager/manager.jsp</result>
+		</action>
+		<action name="ManagerEdit" class="Manager.ManagerEdit">
+			<result name = "success">/manager/manager.jsp</result>
+		</action>
+		<action name="ManagerDelete" class="Manager.ManagerDelete">
+			<result name="success">/manager/manager.jsp</result>
+		</action>
+		<action name="ManagerTeacherLoad" class="ManagerTeacher.ManagerTeacherLoad">
+			<result name="success">/teacher/teacher.jsp</result>
+		</action>
+		<action name="ManagerTeacherAdd" class="ManagerTeacher.ManagerTeacherAdd">
+			<result name="success">/teacher/teacher.jsp</result>
+		</action>
+		<action name="ManagerTeacherEdit" class="ManagerTeacher.ManagerTeacherEdit">
+			<result name="success">/teacher/teacher.jsp</result>
+		</action>
+		<action name="ManagerTeacherDelete" class="ManagerTeacher.ManagerTeacherDelete">
+			<result name= "success">/teacher/teacher.jsp</result>
+		</action>
+		<action name="ManagerStudentLoad" class="ManagerStudent.ManagerStudentLoad">
+			<result name="success">/student/student.jsp</result>
+		</action>
+		<action name="ManagerStudentAdd" class="ManagerStudent.ManagerStudentAdd">
+			<result name="success">/student/student.jsp</result>
+		</action>
+		<action name="ManagerStudentEdit" class="ManagerStudent.ManagerStudentEdit">
+			<result name="success">/student/student.jsp</result>
+		</action>
+		<action name="ManagerStudentDelete" class="ManagerStudent.ManagerStudentDelete">
+			<result name="success">/student/student.jsp</result>
+		</action>
+		<action name="ManagerCourseLoad" class="ManagerCourse.ManagerCourseLoad">
+			<result name="success">/course/course.jsp</result>
+		</action>
+		<action name="ManagerCourseAdd" class="ManagerCourse.ManagerCourseAdd">
+			<result name="success">/course/course.jsp</result>
+		</action>
+		<action name="ManagerCourseEdit" class="ManagerCourse.ManagerCourseEdit">
+			<result name="success">/course/course.jsp</result>
+		</action>
+		<action name="ManagerCourseDelete" class="ManagerCourse.ManagerCourseDelete">
+			<result name ="success">/course/course.jsp</result>
+		</action>
+		<action name="ManagerLoginForget" class="Manager.ManagerLoginForget">
+			<result name="success">/managerLogin.jsp</result>
+			<result name="false">/managerLogin.jsp</result>
+		</action>
+		<action name="ScourseAdd" class="Scourse.ScourseAdd">
+			<result name="success">/student/course.jsp</result>
+			<result name="false">/student/course.jsp</result>
+		</action>
+		<action name="ScourseLoad" class="Scourse.ScourseLoad">
+			<result name="success">/student/scourse.jsp</result>
+		</action>
+		<action name="CourseLoad" class="Course.CourseLoad">
+			<result name="success">/teacher/course.jsp</result>
+		</action>
+	</package>
+	
+	
+
+</struts>    
